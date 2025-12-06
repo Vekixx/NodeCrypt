@@ -41,9 +41,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	backface-visibility: hidden;
-    /* ★ 新增 ★ */
-    align-items: center;
-    justify-content: center;
 }
 
 .flip-card-back {
@@ -162,11 +159,17 @@ body {
 }
 
 .login-container {
-    /* 垂直和水平居中 */
+	/* 移除原有的样式，现在由flip-card处理 */
+	/* max-width: 400px;
+	margin: 60px auto 0 auto;
+	padding: 32px 24px 24px 24px;
+	background: #fff;
+	border-radius: 14px;
+	box-shadow: 0 2px 16px rgba(60, 80, 100, 0.09); */
     display: flex;
+    text-align: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;    /* 垂直居中 */
-    align-items: center;        /* 水平居中 */
 }
 
 .login-container h1 {
